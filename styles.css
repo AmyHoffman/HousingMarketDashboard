@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    margin-left: 12px;
+    margin-top: 48px;
+}
+
+h2 {
+    margin-left: 12px;
+}
+
+.metric{
+    font-size: 36px!important;
+    text-align:center!important;
+}
+
+.tileDescrip{
+    font-size: 16px!important;
+    text-align:center!important;
+}
+
+.dataviz{
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+.text{
+    margin-left: 12px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <h1>Real Estate Market Report</h1>
+        <p class = "text">Tracking real estate trends to determine optimal investment point.</p> 
+    </head>
+
+    <nav>
+        <a href="region.html">Drill Down</a>
+    </nav>
+
+    <script type="module" src="data.js"></script>  
+
+    <section id = "price"> 
+        <div id="ops_price", class = "text"></div>
+        <div id="viz_price", class = "dataviz"></div>
+    </section>
+
+    <section id = "mortgage"> 
+        <div id="ops_mortgage", class = "text"></div>
+        <div id="viz_mortgage", class = "dataviz"></div>
+    </section>
+
+    <h1>Metrics By Montana Metropolitain Area</h1>
+
+    <section class="tiles-grid", class = "text">
+    
+        <div id = "migration", data-size="wide", data-role="tile",
+         class="slide-back d-flex flex-justify-center flex-align-center p-4 text", style = "background-color: darkgrey;">
+            <p class="tileDescrip">YoY metrics based on most recent observation for each data set.</p>
+        </div>
+
+        <div id = "inventory", data-size="medium", data-role="tile", class="slide-back d-flex flex-justify-center flex-align-center p-4 text">
+            <p class="metric"> </p>
+            <span class="branding-bar">Inventory</span>
+        </div>
+
+        <div id = "new", data-size="medium", data-role="tile", class="slide-back d-flex flex-justify-center flex-align-center p-4 text">
+            <p class="metric"></p>
+            <span class="branding-bar">New</span>
+        </div>
+
+        <div id = "pending", data-size="medium", data-role="tile", class="slide-back d-flex flex-justify-center flex-align-center p-4 text">
+            <p class="metric"></p>
+            <span class="branding-bar">Pending</span>
+        </div>
+
+        <div id = "zhvi", data-size="medium", data-role="tile", class="slide-back d-flex flex-justify-center flex-align-center p-4 text">
+            <p class="metric"></p>
+            <span class="branding-bar">ZHVI</span>
+        </div>
+    </section>
+
+    <h2>Filters</h2>
+    
+    <section id = "zhvi"> 
+        <div id="ops_zhvi", width = "1200px", class = "text"></div>
+        <div id="viz_zhvi", class = "dataviz"></div>
+    </section>
+
+    <section id = "inventory"> 
+        <div id="ops_inventory", class = "text"></div>
+        <div id="viz_inventory", class = "dataviz"></div>
+    </section>
+
+    <section id = "newpending"> 
+        <div id="ops_newpending", class = "text"></div>
+        <div id="viz_newpending", class = "dataviz"></div>
+    </section>
+
+    </body>
+</html>
